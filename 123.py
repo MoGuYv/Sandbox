@@ -1,0 +1,1 @@
+https://account.jetbrains.com/github/oauth/intellij/authorize?code_challenge=iDGW%2BGW%2FRUppvNLFSNGEHHHeep0d4Ep7zGDX4isL2FM%3D&callback_url=http%3A%2F%2F127.0.0.1%3A63342%2Fapi%2Fgithub%2Foauth%2Fauthorization_code
