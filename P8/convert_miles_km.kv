@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    # Top third: Up / input / Down (horizontally)
+    BoxLayout:
+        spacing: 10
+        Button:
+            text: 'Up'
+            on_press: app.handle_increment(1)
+        TextInput:
+            id: miles_input
+            text: ''
+            multiline: False
+            on_text: app.update_result(self.text)
+        Button:
+            text: 'Down'
+            on_press: app.handle_increment(-1)
+
+    # Convert button (Stage 1). Commented out in Stage 2 per prac instructions.
+    # Button:
+    #     text: 'Convert'
+    #     on_press: app.update_result(miles_input.text)
+
+    Label:
+        text: app.km_text
+        color: (1, 1, 0, 1)
